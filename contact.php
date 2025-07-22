@@ -5,7 +5,7 @@
 $host = "localhost"; // Host de la base de datos
 $usuario = "root"; // Usuario de la base de datos
 $contrasena = ""; // Contraseña del usuario
-$base_datos = "portafolio_db"; // Nombre de la base de datos
+$base_datos = "portfolio_db"; // Nombre de la base de datos
 
 // Crear conexión
 $conn = new mysqli($host, $usuario, $contrasena, $base_datos);
@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($conn->query($sql) === TRUE) {
         echo "Mensaje guardado exitosamente";
         // Puedes redirigir a una página de éxito o mostrar un mensaje
-        // header("Location: gracias.html");
+        header("Location: gracias.html");
     } else {
         echo "Error al guardar el mensaje: " . $conn->error;
     }
