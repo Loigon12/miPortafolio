@@ -1,8 +1,0 @@
--- SQL para crear la tabla en PHPMyAdmin --
-CREATE TABLE contactos (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR(50) NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    mensaje TEXT NOT NULL,
-    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-);

@@ -5,7 +5,7 @@
 $host = "localhost"; // Host de la base de datos
 $usuario = "root"; // Usuario de la base de datos
 $contrasena = ""; // Contraseña del usuario
-$base_datos = "portfolio_db"; // Nombre de la base de datos
+$base_datos = "portafolio_db"; // Nombre de la base de datos
 
 // Crear conexión
 $conn = new mysqli($host, $usuario, $contrasena, $base_datos);
@@ -40,5 +40,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
+// contact.php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 $conn->close();
 ?>
