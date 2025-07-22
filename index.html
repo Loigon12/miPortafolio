@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portafolio | Desarrollador Web</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css " integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<header class="navbar">
+    <div class="container">
+        <h1 class="logo">Mi<span>Portafolio</span></h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Sección Inicio -->
+<section id="inicio" class="hero">
+    <div class="container hero-content">
+        <h2>Hola, soy</h2>
+        <h1>Sebas Digital Studio</h1>
+        <p>Desarrollador Full Stack | Innovando en cada línea de código</p>
+        <a href="#contacto" class="btn">Trabajemos Juntos!</a>
+    </div>
+</section>
+
+<!-- Sección Sobre Mí -->
+<section id="sobre-mi" class="about section">
+    <div class="container">
+        <h2>Sobre Mí</h2>
+        <div class="about-content">
+            <img src="IMG_9963.jpg"
+                 alt="Foto de perfil"
+                 srcset="IMG_9963.jpg 1x, IMG_9963@2x.jpg 2x"
+                 sizes="(max-width: 600px) 100vw, 400px"
+                 class="profile-image" />
+            <p>
+                Soy un apasionado desarrollador full stack con 3 años de experiencia creando soluciones digitales eficientes y escalables. Me especializo en JavaScript, React, C++, Python y bases de datos relacionales y no relacionales. Siempre busco aprender nuevas tecnologías y aplicarlas para resolver problemas reales.
+                Me gusta trabajar en equipo y me adapto a cualquier espacio de trabajo siempre y cuando la buena comunicación persista y sea reciproca.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Habilidades -->
+<section id="habilidades" class="skills section">
+    <div class="container">
+        <h2>Habilidades Técnicas</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-js-square skill-icon"></i>
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-react skill-icon"></i>
+                <span>React</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code skill-icon"></i>
+                <span>C++</span>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-python skill-icon"></i>
+                <span>Python</span>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database skill-icon"></i>
+                <span>MySQL</span>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-php skill-icon"></i>
+                <span>PHP</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Proyectos -->
+<section id="proyectos" class="projects section">
+    <div class="container">
+        <h2>Proyectos Destacados</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Proyecto+1"
+                     alt="Proyecto 1"
+                     srcset=" https://via.placeholder.com/300x200.png?text=Proyecto+1 1x,
+                              https://via.placeholder.com/600x400.png?text=Proyecto+1 2x"
+                     sizes="(max-width: 600px) 100vw, 300px" />
+                <h3>Plataforma de Gestión Empresarial</h3>
+                <p>Aplicación web full-stack para gestión de inventario y ventas.</p>
+            </div>
+            <div class="project-card">
+                <img src=" https://via.placeholder.com/300x200.png?text=Proyecto+2"
+                     alt="Proyecto 2"
+                     srcset=" https://via.placeholder.com/300x200.png?text=Proyecto+2 1x,
+                              https://via.placeholder.com/600x400.png?text=Proyecto+2 2x"
+                     sizes="(max-width: 600px) 100vw, 300px" />
+                <h3>Blog Personal con CMS</h3>
+                <p>Blog dinámico con editor de contenido integrado y sistema de comentarios.</p>
+            </div>
+            <div class="project-card">
+                <img src=" https://via.placeholder.com/300x200.png?text=Proyecto+3"
+                     alt="Proyecto 3"
+                     srcset=" https://via.placeholder.com/300x200.png?text=Proyecto+3 1x,
+                              https://via.placeholder.com/600x400.png?text=Proyecto+3 2x"
+                     sizes="(max-width: 600px) 100vw, 300px" />
+                <h3>API REST para App Móvil</h3>
+                <p>Backend escalable para aplicación móvil de salud y bienestar.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Contacto -->
+<section id="contacto" class="contact section">
+    <div class="container">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Tu nombre" required />
+            <input type="email" placeholder="Tu correo electrónico" required />
+            <textarea rows="5" placeholder="Mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar Mensaje</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Sebas Digital Studio. Todos los derechos reservados.</p>
+        <div class="socials">
+            <a href="#">LinkedIn</a> |
+            <a href="#">GitHub</a> |
+            <a href="#">Behance</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
